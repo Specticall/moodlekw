@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Quiz App</title>
+    <!-- ========= CSS LINK ============ -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- ========= ICON ============ -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ========= FONTS (Poppins) ============ -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="warning__popup-container">
+      <article class="warning">
+        <div class="warning__wrapper">
+          <h3>Masih ada nomor yang kosong</h3>
+          <p>Apakah anda yakin ingin mensubmit?</p>
+          <div class="warning__button">
+            <a href="result.html" class="warning__submit"
+              >Submit</a
+            >
+            <button class="warning__back">Back</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- =========== HEADER ============== -->
+    <header class="header">
+      <div class="header__wrapper">
+        <button class="header__more button">
+          <i class="bx bx-list-ul"></i>
+        </button>
+        <p class="header__title">Kalkulus SMA</p>
+        <img
+          src="assets/pexels-medium-photoclub-4041087.jpg"
+          alt=""
+          class="header__pfp"
+        />
+      </div>
+    </header>
+    <!-- ============ MAIN =============== -->
+    <main>
+      <section class="ongoing__test">
+        <section class="progress section">
+          <article class="progress__container">
+            <div class="progress_header-wrapper">
+              <i class="bx bx-bar-chart progress__icon"></i>
+              <div class="progress__header">
+                <h2 class="progress__header-title">
+                  Progress Anda
+                </h2>
+                <p class="progress__subtitle">
+                  Buka untuk lihat progress anda
+                </p>
+                <button class="button"></button>
+              </div>
+            </div>
+
+            <i
+              class="bx bx-chevron-down progress__down-button"
+            ></i>
+          </article>
+          <article class="progress__box">
+            <div class="progress_box-wrapper"></div>
+          </article>
+        </section>
+        <!-- ============= QUESTION =============== -->
+        <section class="question section">
+          <h3 class="question__number-text">
+            <p>
+              Pertanyaan
+              <span class="question__number"> 3/5</span>
+            </p>
+          </h3>
+          <article class="question__container">
+            <p class="question__main">
+              Suatu perusahaan memproduksi unit barang
+              dengan biaya (4x<sup>2</sup> - 8x + 24) ribu
+              rupiah untuk tiap unit. Jika barang tersebut
+              terjual habis dengan harga Rp40.000,00 untuk
+              tiap unit, maka keuntungan maksimum yang
+              diperoleh perusahaan tersebut adalah
+            </p>
+            <ul class="question__answers-container">
+              <li class="question__answer">Rp.16.000,00</li>
+              <li class="question__answer">Rp.32.000,00</li>
+              <li class="question__answer">Rp.48.000,00</li>
+              <li class="question__answer">Rp.52.000,00</li>
+            </ul>
+          </article>
+          <div class="navigation__button-container">
+            <button class="navigation__button back">
+              <i class="bx bx-chevron-left"></i> Back
+            </button>
+            <button class="navigation__button next">
+              <a class="submit-wrapper">
+                <p>Next</p>
+                <i class="bx bx-chevron-right"></i>
+              </a>
+              <a
+                href="result.html"
+                class="submit-wrapper submit-hide"
+              >
+                <p>Submita</p>
+                <i class="bx bx-chevron-right"></i>
+              </a>
+            </button>
+          </div>
+        </section>
+        <!-- ========= WARNING ============ -->
+      </section>
+    </main>
+  </body>
+  <!--  ========= JS Link ============-->
+  <script src="index.js"></script>
+</html>

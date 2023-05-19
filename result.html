@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Quiz App</title>
+    <!-- ========= CSS LINK ============ -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- ========= ICON ============ -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ========= FONTS (Poppins) ============ -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= NAV BAR =========== -->
+    <header class="header">
+      <div class="header__wrapper">
+        <button class="header__more button">
+          <i class="bx bx-list-ul"></i>
+        </button>
+        <p class="header__title">Kalkulus SMA</p>
+        <img
+          src="assets/pexels-medium-photoclub-4041087.jpg"
+          alt=""
+          class="header__pfp"
+        />
+      </div>
+    </header>
+    <main>
+      <!-- ========= Score Section =======  -->
+      <section class="score section">
+        <p class="score__subtitle">Materi Kalkulus SMA</p>
+        <h2 class="score__title">Quiz Selesai!</h2>
+        <div class="score__container">
+          <div class="score__circle">
+            <div class="score__inner__circle"></div>
+            <div class="score__display-text">
+              <p class="score__display__subtitle">
+                Nilai Anda
+              </p>
+              <h1 class="score__display">0</h1>
+              <p class="score__display__outof">/100</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="score__info section">
+        <p>
+          Anda berhasil menjawab
+          <span class="score__info-dynamic">0 dari 5</span>
+          pertanyaan dengan benar!
+        </p>
+      </section>
+      <!-- ======== Analytics Section ======== -->
+      <section class="analisa section">
+        <h2 class="analisa__title">
+          <i class="bx bx-bar-chart-alt-2"></i>
+          <p>Analisa</p>
+        </h2>
+        <article class="analisa__container">
+          <div class="analisa__indicator correct">
+            <i class="bx bx-check correct"></i>
+            <p class="analisa__result correct">0%</p>
+            <p class="analisa__subtitle correct">Benar</p>
+          </div>
+          <div class="analisa__indicator wrong">
+            <i class="bx bx-x wrong"></i>
+            <p class="analisa__result wrong">100%</p>
+            <p class="analisa__subtitle wrong">Salah</p>
+          </div>
+          <div class="analisa__indicator empty">
+            <i class="bx bx-question-mark empty"></i>
+            <p class="analisa__result empty">0%</p>
+            <p class="analisa__subtitle empty">Kosong</p>
+          </div>
+        </article>
+        <a href="index.html" class="try-again__button">
+          <i class="bx bx-repost"></i>
+          Coba lagi
+        </a>
+      </section>
+    </main>
+  </body>
+  <!--  ========= JS Link ============-->
+  <!-- <script src="index.js"></script> -->
+  <script src="result.js"></script>
+</html>
